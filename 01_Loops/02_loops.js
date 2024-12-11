@@ -119,3 +119,26 @@ let checkPalindrome = () => {
 }
 checkPalindrome()
  */
+
+
+// Find the missing number
+
+const FindNum = () => {
+     let myNum = [1,2,3,4,5,7,8,9];
+     let sumOfNum = 0;
+     let sumOfAvailNum = 0;
+     let result ;
+
+     for(let i= 1; i<=9; i++){
+          sumOfNum = sumOfNum + i;
+     }
+
+     for(let i = 0; i<myNum.length; i++){
+          sumOfAvailNum = sumOfAvailNum + myNum[i]
+     }
+     
+     result =  sumOfNum - sumOfAvailNum ;
+     console.log(result)
+
+}
+FindNum()
