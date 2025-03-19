@@ -26,19 +26,19 @@
 
 // let price = Number(prompt("Enter your bill or price "));
 // let dis = 0;
-// if(price > 0 && price<=5000){
+// if(price > 0 && price<=5000){ shopping -> 0 - 5000 => dis -> 0
 //      // console.log(price)
 //      dis = 0;
 // }
-// else if(price > 5001 && price<=7000){
+// else if(price > 5001 && price<=7000){ dis => 5
 //      // console.log(price - Math.floor((5*price)/100));
 //      dis = 5;
 // }
-// else if(price > 7001 && price<=9000){
+// else if(price > 7001 && price<=9000){ dis => 10
 //      // console.log(price - Math.floor((10*price)/100));
 //      dis = 10;
 // }
-// else if(price > 9000){
+// else if(price > 9000){ dis => 20
 //      // console.log(price - Math.floor((20*price)/100));
 //      dis = 20;
 // }
@@ -52,6 +52,8 @@
 
 // let unit = Number(prompt("Enter your unit -: "));// 7000
 // let amount = 0;
+
+// amount = amount + (actual unit - your unit) * rate;
 
 // if(unit>400){
 //      amount = (unit - 400) * 13; // 3900
@@ -73,7 +75,7 @@
 // //      unit = 0;
 // // }
 
-// amount += unit * 4; 
+// amount +=  unit * 4; 
 
 // console.log("Your total amount = ", amount);
 
