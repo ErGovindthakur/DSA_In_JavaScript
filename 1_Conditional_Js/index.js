@@ -4,9 +4,9 @@
 
 // Note -> without if, else can't work
 
-// Problem 
+// Problem
 
-// 1. valid voter 
+// 1. valid voter
 
 // let age = Number(prompt("Enter your age -: "));
 // if(isNaN(NaN)){
@@ -18,9 +18,7 @@
 //      console.log("You can't vote")
 // }
 
-
-
-// 2. shop discount 
+// 2. shop discount
 
 // discount => (amount * discount)/100
 
@@ -47,7 +45,6 @@
 // }
 // console.log(price - Math.floor((price*dis)/100));
 
-
 // 3. Bijli bill
 
 // let unit = Number(prompt("Enter your unit -: "));// 7000
@@ -56,8 +53,9 @@
 // amount = amount + (actual unit - your unit) * rate;
 
 // if(unit>400){
+//      700 - 400 -> 300 (used 300 but remaining 400)
 //      amount = (unit - 400) * 13; // 3900
-//      unit = 400;
+//      unit = 400; // Remaining
 // }
 
 // if(unit>200 && unit <= 400){
@@ -75,10 +73,9 @@
 // //      unit = 0;
 // // }
 
-// amount +=  unit * 4; 
+// amount +=  unit * 4;
 
 // console.log("Your total amount = ", amount);
-
 
 // 4. INR denomination
 
@@ -118,7 +115,6 @@
 
 // console.log(12>11 ? "Sahi hai":"Galat hai");
 
-
 // 6. Nested ternary operator
 
 // let num = 9;
@@ -136,11 +132,10 @@
 //           console.log("Tuesday");
 //           break;
 //      default:
-//           console.log("Other day");      
+//           console.log("Other day");
 // }
 
-
-// Note -> 
+// Note ->
 // Use if-else when dealing with (boolean expressions),( ranges), or (complex conditions).
 
 // Use switch when checking a (single variable against multiple possible values) for better readability and performance.
