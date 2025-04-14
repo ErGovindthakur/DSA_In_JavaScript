@@ -31,3 +31,42 @@ while(j<arr2.length){
      j++;
 }
 console.log(newArray);
+
+/*
+Time Complexity => O(m+n)
+and 
+Space Complexity => O(m+n)
+*/
+
+// Merging two sorted array "in place"
+
+let mergeTwoSortedArrayInPlace = (firstArr,m, secondArr,n) => {
+     let i = m - 1;
+     let j = n - 1;
+     let k = m+n - 1;
+     while(i>=0 && j>=0){
+          if(firstArr[i]>secondArr[j]){
+               firstArr[k] = firstArr[i];
+               i--;
+               k--;
+          }else{
+               firstArr[k] = secondArr[j];
+               j--;
+               k--;
+          }
+     }
+
+     // Checking remaining value of secondArr
+     while(j>=0){
+          firstArr[k--] = secondArr[j--];
+     };
+     // No need to check firstArr value
+     return firstArr;
+}
+
+console.log(mergeTwoSortedArrayInPlace([4,5,6],3,[1,2,3,0,0,0],3));
+
+/*
+TMC => O(m+n)
+SPC => O(1); Bcz no extra space is being created
+*/
