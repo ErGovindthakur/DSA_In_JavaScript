@@ -15,3 +15,4 @@ let maxSubArraySum = (arr) => {
      return max;
 }
 console.log(maxSubArraySum([1,2,-3,4,5,-2,6,7,-1,9]));
+// TMC => O(n) and SPC => O(1)
